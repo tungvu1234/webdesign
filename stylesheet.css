@@ -63,3 +63,18 @@ li:hover {
     margin: 0;
     border:0ch;
 }
+
+img {
+    width: 100%;
+    height: 80%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 9rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
