@@ -1,0 +1,23 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  ul {
+    margin: auto;
+    text-align: left;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  
+  li {
+    padding-left: 10;
+  }

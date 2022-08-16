@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project number 3</title>
+        <link rel="stylesheet" type ="text/css" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Content Summary</header>
+            <ul>
+                <li><a class="nav-link" href="#Add_or_edit_data_sources">Add or edit data sources</a></li>
+                <li><a class="nav-link" href="#Review_data_sources">Review data sources</a></li>
+                <li><a class="nav-link" href="#Manage_existing_data_sources">Manage existing data sources</a></li>
+                <li><a class="nav-link" href="#Refresh_data_sources">Refresh data sources</a></li>
+                <li><a class="nav-link" href="#Recommended_content">Recommended content</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Add_or_edit_data_sources">
+                <header>Add or edit data sources</header>
+                <p>You can attach or import data sources into Customer Insights. The links below provide instructions on adding and editing data sources.</p>
+                <p><strong>Attach a data source</strong></p>
+                <p>If you have data prepared in one of Microsoft's Azure data services, Customer Insights can easily connect to the data source without having to re-ingest the data. Select one of the following options:</p>
+                <ul>
+                    <li><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/connect-common-data-model">Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/connect-common-data-model">Azure Synapse Analytics (Lake databases)</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/connect-common-data-model">Microsoft Dataverse data lake</a></li>
+                </ul>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code>
+                <p><strong>Import and transform</strong></p>
+                <p>If you use on-premise data sources, Microsoft, or third-party data, import and transform the data using Power Query connectors.</p>
+            </section>
+            <section class="main-section" id="Review_data_sources">
+                <header>Review data sources</header>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code>
+                <p>If your environment was configured to use Customer Insights storage and you use on-premise data sources, you use Power Platform dataflows. With Power Platform dataflows, you can view shared data sources and data sources managed by others. The Data Sources page lists the data sources in three sections:</p>
+                <ul>
+                    <li><strong>Shared: </strong>Data sources that can be managed by all Customer Insights admins. Power Platform dataflows, your own storage account, and attaching to a Dataverse-managed data lake are examples of shared data sources.</li>
+                    <li><strong>Managed by me: </strong>Power Platform dataflows created and managed only by you. Other Customer Insights admins can only view these dataflows but not edit, refresh, or delete them.</li>
+                    <li><strong>Managed by others: </strong>Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.</li>
+                </ul>
+                <div class="alert">
+                    <p>All entities can be viewed and used by other users. While data sources are owned by the user who created them, the resulting entities from the data ingestion can be used by every user of Customer Insights.</p>
+                </div>
+                <p>If your environment does not use Power Platform dataflows, the Data Sources page contains only a list of all data sources. No sections display.</p>
+            </section>
+            <section class="main-section" id="Manage_existing_data_sources">
+                <header>Manage existing data sources</header>
+                <p>Go to <strong>Data > Data sources </strong>to view the name of each ingested data source, its status, and the last time the data was refreshed for that source. You can sort the list of data sources by any column or use the search box to find the data source you want to manage.</p>
+                <p>Select a data source to view available actions.</p>
+                <p></p><code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code></p>
+                <img src="https://docs.microsoft.com/en-us/dynamics365/customer-insights/media/data_sources_showmore.png">
+                <ul>
+                    <li><strong><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/data-sources#add-or-edit-data-sources">Edit</a></strong> the data source to change its properties.</li>
+                    <li><strong><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/data-sources#add-or-edit-data-sources">Refresh</a></strong> the data source to include the latest data.</li>
+                    <li><strong><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/data-sources#add-or-edit-data-sources">Enrich</a></strong> the data source before unification.</li>
+                    <li><strong><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/data-sources#add-or-edit-data-sources">Delete</a></strong> the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Refresh_data_sources">
+                <header>Refresh data sources</header>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code>
+                <p>Data sources can be refreshed on an automatic schedule or refreshed manually on demand. <a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/connect-power-query#add-data-from-on-premises-data-sources">On-premise data sources</a> refresh on their own schedules which are set up during data ingestion. For attached data sources, data ingestion consumes the latest data available from that data source.</p>
+                <p>Go to <strong> Admin> System > <a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/system#schedule-tab">Schedule</a></strong> to configure system-scheduled refreshes of your ingested data sources.</p>
+                <p>To refresh a data source on demand:</p>
+                <ol>
+                    <li>Go to <strong>Data > Data sources.</strong></li>
+                    <li>Select the data source you want to refresh and select <strong>Refresh</strong>. The data source is now triggered for a manual refresh. Refreshing a data source will update both the entity schema and data for all the entities specified in the data source.</li>
+                    <li>Select the status to open the <strong>Progress details</strong> pane and view the progress. To cancel the job, select Cancel job at the bottom of the pane.</li>
+                </ol>
+            </section>
+            <section class="main-section" id="Recommended_content">
+                <header>Recommended content</header>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code>
+                <p><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/entities">Entities in Customer Insights</a></p>
+                <p><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/entities">Create measures with measure builder</a></p>
+                <p><a href="https://docs.microsoft.com/en-us/dynamics365/customer-insights/entities">Exports (preview) overview</a></p>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");</code>
+            </section>
+        </main>
+    </body>
+</html>

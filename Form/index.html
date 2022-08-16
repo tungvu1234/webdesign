@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your precious time!</p>
+    <form id="survey-form">
+      <label id="name-label">Please enter your full name</label><input id="name" type="text" placeholder="Enter your full name" required />
+      <label id="email-label">Email Adress</label><input id="email" type="email" placeholder="Example@example.com" required />
+      <label id="number-label">Enter your age</label><input id="number" type="number" min="20" max="100" placeholder="20-100" />
+      <label>Please select one: 
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+      </label>
+      <label><input type="radio" name="account-type" class="inline" value="Personal" /> Personal Account</label>
+      <label><input type="radio" name="account-type" class="inline" value="Business" /> Business Account</label>
+      <p> What would you like to see improved? </p>
+      <label><input type="checkbox" value="value1">Value 1</label>
+      <label><input type="checkbox" value="value2">Value 2</label>
+      <label><input type="checkbox" value="value3">Value 3</label>
+      <label><input type="checkbox" value="value4">Value 4</label>
+      <label> Any other comments<label> <textarea id="comment" /></textarea>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
