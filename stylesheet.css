@@ -3,6 +3,7 @@
     box-sizing: inherit;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: red;
+    background-color:indianred;
     z-index: 10;
 }
 
@@ -64,6 +65,33 @@ li:hover {
     border:0ch;
 }
 
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size:xx-large
+}
+
+h2 {
+    text-decoration: underline;
+    color: beige;
+
+}
+.subtitle {
+    color: indianred;
+    font-style: italic;
+}
+
+#projects {
+    padding: 10px;
+    padding-top: 7vh;
+    background-color:grey;
+}
+
+.project-title{
+    border:honeydew solid;
+
+}
 img {
     width: 100%;
     height: 80%;
@@ -72,9 +100,10 @@ img {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 9rem;
+    grid-gap: 2rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    margin-bottom: 0;
 }
