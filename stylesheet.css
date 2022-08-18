@@ -1,7 +1,7 @@
 *, *::before, *::after {
     text-align: center;
     box-sizing: inherit;
-    font-family: 'Poppins', sans-serif;
+
     font-size: 1.2rem;
     scroll-behavior: smooth;
 }
@@ -10,6 +10,43 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+  }
 
 #navbar {
     display: flex;
@@ -75,6 +112,8 @@ h1, h2 {
 h2 {
     text-decoration: underline;
     color: beige;
+    margin: 0;
+    padding: 2%;
 
 }
 .subtitle {
@@ -106,4 +145,17 @@ img {
     margin: 0 auto;
     margin-bottom: 6rem;
     margin-bottom: 0;
+}
+
+#contact {
+    height: 70vh;
+    background-color: #3a3d40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #3a3d40;
+    color: white;
 }
