@@ -3,12 +3,26 @@ body {
     font-size: 1rem;
     text-align: center;
   }
+
+h1 {
+  margin-bottom: 0;
+}
+
+  p {
+    margin-top: 0;
+    font-style: italic;
+  }
   
   img {
     display: block;
     height: auto;
-    max-width: 100%;
+    max-width: 60%;
     margin: 0 auto;
+  }
+
+  figcaption {
+    font-style: italic;
+    font-weight: lighter;
   }
   
   ul {
@@ -16,8 +30,10 @@ body {
     text-align: left;
     line-height: 1.6;
     max-width: 600px;
+    list-style: none;
   }
   
   li {
     padding-left: 10;
+    margin: 1%;
   }

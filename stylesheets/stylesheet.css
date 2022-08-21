@@ -152,10 +152,22 @@ img {
     background-color: #3a3d40;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content:space-around;
 }
+
+
 
 footer {
     background-color: #3a3d40;
     color: white;
+}
+
+footer p {
+    margin: 0;
+    padding: 1%;
+}
+
+footer {
+    border-top: snow double ;
+    
 }

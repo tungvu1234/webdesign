@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./stylesheets/form.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Website Survey Form</h1>
     <p id="description">Thank you for your precious time!</p>
     <form id="survey-form">
       <label id="name-label">Please enter your full name</label><input id="name" type="text" placeholder="Enter your full name" required />
@@ -17,15 +17,19 @@
           <option>Option 2</option>
           <option>Option 3</option>
           <option>Option 4</option>
+        </select>
       </label>
-      <label><input type="radio" name="account-type" class="inline" value="Personal" /> Personal Account</label>
-      <label><input type="radio" name="account-type" class="inline" value="Business" /> Business Account</label>
-      <p> What would you like to see improved? </p>
+      <hr>
+      <label><input type="radio" name="account-type" class="inline" value="Personal" /> Personal Adress</label>
+      <label><input type="radio" name="account-type" class="inline" value="Business" /> Business Adress</label>
+      <hr>
+      <p style="text-align:left;"> What would you like to see improved? </p>
       <label><input type="checkbox" value="value1">Value 1</label>
       <label><input type="checkbox" value="value2">Value 2</label>
       <label><input type="checkbox" value="value3">Value 3</label>
       <label><input type="checkbox" value="value4">Value 4</label>
-      <label> Any other comments<label> <textarea id="comment" /></textarea>
+      <hr>
+      <label> Any other comments<label> <textarea id="comment"></textarea>
       <button type="submit" id="submit" class="submit-button">Submit</button>
     </form>
   </body>
