@@ -1,14 +1,18 @@
-html {
-    display: block;
-}
-
 html, body {
-    min-width: 190px;
+    min-width: 290px;
     color: #4d4e53;
     background-color: #ffffff;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
-    width: auto;
+    scroll-behavior: smooth;
+}
+
+html {
+    display: block;
+}
+
+body {
+    margin: 8px;
 }
 
 #navbar {
@@ -22,11 +26,19 @@ html, body {
     border-color: rgba(0, 22, 22, 0.4);
 }
 
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
 #navbar ul {
     height: 88%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
+
 }
 
 #navbar li {
@@ -35,26 +47,36 @@ html, body {
     list-style: none;
     position: relative;
     width: 100%;
+    padding: 2.5%;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #main-doc {
     position: absolute;
     margin-left: 310px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 110px;
+    width: auto;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 900px) {
     #navbar {
-      position: inherit;
-      width: 100%;
-      border-right:0rem;
-      height: 20%;
-      border-bottom: solid;
+        position: initial;
+        width: 100vw;
+        border-bottom: solid;
+    }
+    #navbar li {
+        padding: 0;
     }
     #main-doc {
-        margin: 0;
-        padding: 20 0 0 0;
-        width: 700px;
+        position: initial;
+        margin: 0%;
     }
   }
